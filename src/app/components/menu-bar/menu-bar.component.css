@@ -39,10 +39,11 @@
     padding-right: 10px;
     font-family: 'Black Han Sans', sans-serif;
     font-weight: 900;
+    color: #666666;
 }
 
 ._menu-bar_logo>h1>span {
-    color: #666666;
+    color: #8d5d36;
 }
 
 ._menu-bar_menu>ul {
