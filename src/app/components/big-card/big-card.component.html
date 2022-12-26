@@ -12,7 +12,9 @@
                     <span class="tag">{{tag}}</span> {{date}}
                 </div>
                 <div class="title">
-                    <h2> {{title}} </h2>
+                    <a [routerLink]="['content',id]">
+                        <h2> {{title}} </h2>
+                    </a>
                 </div>
                 <div class="description">{{preDescription}}</div>
             </div>
