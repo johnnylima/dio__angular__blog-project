@@ -2,18 +2,18 @@
     <div class="position_relative">
         <div class="content container">
             <div class="tag-date">
-                <span class="tag">Life</span> Dezembro 23, 2022
+                <span class="tag">{{tag}}</span> {{date}}
             </div>
             <div class="title">
-                <h2>30 melhores blogs de estilo de vida para seguir em 2023</h2>
+                <h2>{{title}}</h2>
             </div>
             <div class="image">
-                <img src="http://wp.alithemes.com/html/flow/html-demo/assets/imgs/news/thumb-10.jpg" alt="">
+                <img src="{{thumb}}" alt="">
             </div>
-            <div class="description">Puxa jaguar avestruz codorna um animado querido olá e amarrado e o papa-léguas moral insípido bateu lince longe disso e jeepers riu muito e muito careca aquela píton papa-léguas dentro segurava astutamente o peixe-boi. Humano inquieto muito
-                imprudentemente, enquanto lagarta bem, um bem choramingou, acrescentou um, algum sussurrou desenfreadamente, enquanto irritante, longe se agarrou, independentemente, lamentou mais rosadamente e onde saudou enquanto preto querido, então
-                caramba, considerando reformular para algum grosseiro até.</div>
-            <div class="back">Voltar</div>
+            <div class="description">{{description}}</div>
+            <a [routerLink]="['']">
+                <div class="back">Voltar</div>
+            </a>
         </div>
     </div>
 </div>

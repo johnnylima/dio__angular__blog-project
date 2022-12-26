@@ -1,10 +1,8 @@
-<app-big-card tag="{{dataBigCard.tag}}" date="{{dataBigCard.date}}" title="{{dataBigCard.title}}" preDescription="{{dataBigCard.preDescription}}" thumb="{{'../../assets/'+dataBigCard.thumb}}"></app-big-card>
+<app-big-card id="{{dataBigCard.id}}" tag="{{dataBigCard.tag}}" date="{{dataBigCard.date}}" title="{{dataBigCard.title}}" preDescription="{{dataBigCard.preDescription}}" thumb="{{dataBigCard.thumb}}"></app-big-card>
 <div class="sticky">
     <div class="position_relative">
         <div class="container">
-            <app-small-card></app-small-card>
-            <app-small-card></app-small-card>
-            <app-small-card></app-small-card>
+            <app-small-card *ngFor="let e of dataSmallCard" id="{{e.id}}" date="{{e.date}}" title="{{e.title}}" thumb="{{e.thumb}}"></app-small-card>
         </div>
     </div>
 </div>

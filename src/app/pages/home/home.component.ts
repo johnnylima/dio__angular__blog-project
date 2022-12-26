@@ -8,13 +8,19 @@ import {dataFake} from '../../data/dataFake'
 export class HomeComponent implements OnInit {
   data
   dataBigCard
+  dataSmallCard
 
   constructor(){
-    this.data = dataFake
+    this.data = [...dataFake]
     this.dataBigCard = this.data[0]
+    this.dataSmallCard = this.data
+    if(this.dataSmallCard.length>3){
+      // console.log('id',this.dataSmallCard[0].id);
+      this.dataSmallCard.shift()
+    }
   }
   ngOnInit(): void {
-    // console.log(this.data[0].tag);
+    // console.log(this.dataSmallCard);
   }
 
 
