@@ -2,17 +2,20 @@
     <div class="position_relative">
         <div class="content__small-card">
             <div class="colA">
-                <div class="image">
-                    <img src="http://wp.alithemes.com/html/flow/html-demo/assets/imgs/news/thumb-10.jpg" alt="">
-                </div>
+                <a [routerLink]="['content',id]">
+                    <div class="image">
+                        <img src="{{thumb}}" alt="">
+                    </div>
+                </a>
             </div>
             <div class="colb">
-
-                <div class="title">
-                    <h5>30 melhores blogs de estilo de vida para seguir em 2023</h5>
-                </div>
+                <a [routerLink]="['content',id]">
+                    <div class="title">
+                        <h5>{{title}}</h5>
+                    </div>
+                </a>
                 <div class="date">
-                    Dezembro 23, 2022
+                    {{date}}
                 </div>
             </div>
         </div>
