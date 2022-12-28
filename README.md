@@ -1,3 +1,7 @@
+# Veja o projeto
+
+Veja como ficou o projeto [Dio Angular Blog Project](https://johnnylima.github.io/dio__angular__blog-project/) version 1.0.0.
+
 # DioAngularBlogProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
